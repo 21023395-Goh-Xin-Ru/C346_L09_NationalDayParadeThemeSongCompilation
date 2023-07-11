@@ -5,49 +5,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="sg.edu.rp.c346.id21023395.songs.MainActivity">
+    tools:context="sg.edu.rp.c346.id21023395.songs.ThirdActivity">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Song ID" />
+
+    <EditText
+        android:id="@+id/etID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/title" />
 
     <EditText
-        android:id="@+id/title"
+        android:id="@+id/etST"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/songTitle"
         android:inputType="text" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/singer" />
 
     <EditText
-        android:id="@+id/singer"
+        android:id="@+id/etSN"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:ems="10"
         android:hint="@string/singerName"
         android:inputType="text" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/years" />
 
     <EditText
-        android:id="@+id/year"
+        android:id="@+id/etYr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/year"
-        android:inputType="number" />
+        android:inputType="text" />
 
     <TextView
-        android:id="@+id/starHeader"
+        android:id="@+id/textView8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/star" />
@@ -68,7 +81,7 @@
         <RadioButton
             android:id="@+id/twoStars"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/stars2" />
 
@@ -98,22 +111,26 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnUpdate"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/btnInsert" />
+            android:text="@string/btnUpdate" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnDelete"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/btnShow" />
+            android:text="@string/btnDelete" />
     </LinearLayout>
 
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnCancel" />
 </LinearLayout>

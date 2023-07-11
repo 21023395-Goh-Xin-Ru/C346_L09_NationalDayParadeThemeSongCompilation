@@ -5,14 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
-
-import com.google.android.material.textfield.TextInputEditText;
-
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 // Create the DBHelper object, passing in the activity's Context
                 DBHelper db = new DBHelper(MainActivity.this);
                 // Insert a task
-                db.insertTask(Title, Singers, Year, stars);
+                db.insertSong(Title, Singers, Year, stars);
                 db.close();
             }
         });

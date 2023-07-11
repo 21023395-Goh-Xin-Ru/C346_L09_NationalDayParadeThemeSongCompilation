@@ -1,8 +1,8 @@
 package sg.edu.rp.c346.id21023395.songs;
 
-import androidx.annotation.NonNull;
+import java.io.Serializable;
 
-public class Song {
+public class Song implements Serializable {
     private int id;
     private String title;
     private String singers;
@@ -25,10 +25,17 @@ public class Song {
     public int getYear() { return year;}
 
     public int getStars() { return stars;}
+    public String setTitle(String t) { return this.title = t; }
+    public String setSingers(String s) { return this.singers = s; }
+    public int setYear(int y) { return this.year = y; }
+    public int setStars(int s) { return this.stars = s; }
 
-    @NonNull
     @Override
     public String toString() {
-        return String.format("Id: %d\nTitle: %s\nSingers: %s\nYear: %d\nStars: %d", id, title, singers,year,stars);
+        String starString = "";
+        for (int i = 0; i < stars; i++) {
+            starString += "*";
+        }
+        return String.format("%s\n%s - %d\n%s", title, singers, year, starString);
     }
 }

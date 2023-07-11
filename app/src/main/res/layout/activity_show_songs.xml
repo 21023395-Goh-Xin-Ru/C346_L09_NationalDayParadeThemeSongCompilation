@@ -4,10 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".showSongs">
+    android:orientation="vertical"
+    tools:context="sg.edu.rp.c346.id21023395.songs.showSongs">
+
+    <Button
+        android:id="@+id/show5Stars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/header5Stars"
+        android:textAllCaps="true" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" />
 
     <ListView
         android:id="@+id/lv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
+
+    </ListView>
 </LinearLayout>

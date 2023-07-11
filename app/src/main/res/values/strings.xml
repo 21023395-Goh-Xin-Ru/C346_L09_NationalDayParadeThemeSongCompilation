@@ -18,4 +18,9 @@
 
     <string name="btnInsert">INSERT</string>
     <string name="btnShow">SHOW LIST</string>
+    <string name="btnUpdate">UPDATE</string>
+    <string name="btnDelete">DELETE</string>
+    <string name="btnCancel">CANCEL</string>
+    <string name="header5Stars">Show all songs with 5 stars</string>
+
 </resources>
